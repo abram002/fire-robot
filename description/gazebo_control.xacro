@@ -5,18 +5,17 @@
         <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
             <!-- Wheel Information -->
-            <left_joint>left_front_wheel_joint</left_joint>  <!-- Reference to the left front wheel joint -->
-            <right_joint>right_front_wheel_joint</right_joint>  <!-- Reference to the right front wheel joint -->
-            <wheel_separation>0.75</wheel_separation>  <!-- This can be adjusted to match your robot's wheelbase -->
-            <wheel_diameter>0.17</wheel_diameter>  <!-- Updated to match the wheel radius (2 * 0.085) -->
-            <left_joint>left_wheel_joint</left_joint>
-            <right_joint>right_wheel_joint</right_joint>
-            <wheel_separation>0.75</wheel_separation>
+             <left_joint>left_wheel_joint</left_joint>  <!-- Reference to the left front wheel joint -->
+            <right_joint>right_wheel_joint</right_joint>  <!-- Reference to the right front wheel joint -->
+            <wheel_separation>0.297</wheel_separation>
             <wheel_diameter>0.17</wheel_diameter>
+
+
             <!-- Limits -->
             <max_wheel_torque>200</max_wheel_torque>
             <max_wheel_acceleration>10.0</max_wheel_acceleration>
 
+            
             <!-- Output -->
             <odometry_frame>odom</odometry_frame>
             <robot_base_frame>base_link</robot_base_frame>
@@ -27,5 +26,6 @@
 
         </plugin>
     </gazebo>
+
 
 </robot>
